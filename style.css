@@ -1,0 +1,93 @@
+:root {
+  --rose: #b83b5e;
+  --rose-dark: #962f4c;
+  --blush: #fdf0f3;
+  --gold: #e9b872;
+  --ink: #2b2230;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--blush);
+}
+
+.signup-page {
+  min-height: 100vh;
+}
+
+.signup-wrapper {
+  max-width: 980px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(184, 59, 94, 0.15);
+}
+
+/* Left brand panel */
+.brand-panel {
+  background: linear-gradient(160deg, var(--rose) 0%, #6d2a4a 100%);
+  color: #fff;
+}
+
+.brand-name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.brand-text {
+  color: #fbe3ea;
+  line-height: 1.6;
+}
+
+.brand-perks li {
+  padding: 0.4rem 0 0.4rem 1.5rem;
+  position: relative;
+}
+
+.brand-perks li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.9rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+/* Right form panel */
+.form-title {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--rose);
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+  border-color: var(--rose);
+  box-shadow: 0 0 0 0.2rem rgba(184, 59, 94, 0.2);
+}
+
+.form-check-input:checked {
+  background-color: var(--rose);
+  border-color: var(--rose);
+}
+
+.btn-gift {
+  background: var(--rose);
+  border-color: var(--rose);
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-gift:hover {
+  background: var(--rose-dark);
+  border-color: var(--rose-dark);
+  color: #fff;
+}
+
+a {
+  color: var(--rose);
+}
