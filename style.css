@@ -1,0 +1,191 @@
+:root {
+  --rose: #b83b5e;
+  --rose-dark: #962f4c;
+  --blush: #fdf0f3;
+  --gold: #e9b872;
+  --ink: #2b2230;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--blush);
+}
+
+a { color: var(--rose); }
+
+/* ---------- Navbar ---------- */
+.navbar-gift { background: var(--rose-dark); }
+.navbar-gift .navbar-brand {
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.4rem;
+}
+.navbar-gift .nav-link {
+  color: #fbe3ea;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.navbar-gift .nav-link:hover { color: #fff; }
+.navbar-gift .nav-link.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
+  font-weight: 600;
+}
+.navbar-gift .navbar-toggler { border-color: rgba(255, 255, 255, 0.5); }
+.navbar-gift .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.brand-logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+/* ---------- Buttons ---------- */
+.btn-gift {
+  background: var(--rose);
+  border-color: var(--rose);
+  color: #fff;
+  font-weight: 600;
+}
+.btn-gift:hover {
+  background: var(--rose-dark);
+  border-color: var(--rose-dark);
+  color: #fff;
+}
+.btn-gold {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--ink);
+  font-weight: 600;
+}
+.btn-gold:hover {
+  background: #dca75b;
+  border-color: #dca75b;
+  color: var(--ink);
+}
+
+/* ---------- Home page ---------- */
+.hero {
+  background: linear-gradient(135deg, var(--rose) 0%, #6d2a4a 100%);
+  color: #fff;
+  padding: 3rem 0 4rem;
+}
+.hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  line-height: 1.15;
+}
+.hero p { max-width: 36rem; color: #fbe3ea; }
+
+.section-title {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--rose);
+  font-weight: 700;
+}
+.service-card {
+  border: 0;
+  border-top: 4px solid var(--gold);
+  box-shadow: 0 2px 12px rgba(184, 59, 94, 0.1);
+}
+.service-card .card-title { color: var(--rose); }
+
+.stats { background: #fff; }
+.stat-number {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--rose);
+}
+
+/* ---------- Login and signup pages ---------- */
+.auth-page { padding: 2rem 0; }
+.auth-wrapper {
+  max-width: 980px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(184, 59, 94, 0.15);
+}
+.brand-panel {
+  background: linear-gradient(160deg, var(--rose) 0%, #6d2a4a 100%);
+  color: #fff;
+}
+.brand-name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.brand-text { color: #fbe3ea; line-height: 1.6; }
+.brand-perks li {
+  padding: 0.4rem 0 0.4rem 1.5rem;
+  position: relative;
+}
+.brand-perks li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.9rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--gold);
+}
+.form-title {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--rose);
+}
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+  border-color: var(--rose);
+  box-shadow: 0 0 0 0.2rem rgba(184, 59, 94, 0.2);
+}
+.form-check-input:checked {
+  background-color: var(--rose);
+  border-color: var(--rose);
+}
+
+/* ---------- Dashboard ---------- */
+.summary-card {
+  border: 0;
+  border-left: 5px solid var(--gold);
+  box-shadow: 0 2px 12px rgba(184, 59, 94, 0.1);
+}
+.summary-card .count {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--rose);
+}
+.table thead th {
+  background: var(--rose);
+  color: #fff;
+  white-space: nowrap;
+}
+.table td { white-space: nowrap; }
+
+/* ---------- Footer ---------- */
+.site-footer { background: #3a1f2e; color: #e6c9d3; }
+.site-footer h2 { color: #fff; font-size: 1rem; }
+.site-footer a { color: #e6c9d3; text-decoration: none; }
+.site-footer a:hover { color: #fff; text-decoration: underline; }
+.site-footer hr { border-color: rgba(255, 255, 255, 0.2); }
+
+/* Tablets and phones */
+@media (max-width: 991.98px) {
+  .hero { padding: 2.5rem 0 3rem; }
+  .hero h1 { font-size: 2.5rem; }
+}
+
+@media (max-width: 575.98px) {
+  .hero { padding: 2rem 0 2.5rem; }
+  .hero h1 { font-size: 1.9rem; }
+  .hero .lead { font-size: 1rem; margin: 1rem 0 !important; }
+  .hero .btn { width: 100%; }
+  .brand-logo { height: 34px; width: 34px; }
+  .navbar-gift .navbar-brand { font-size: 1.2rem; }
+  .stat-number { font-size: 2rem; }
+}
